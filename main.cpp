@@ -7,6 +7,8 @@
 
 #include "chessboard.h"
 
+// update on mac
+
 int main(int argc, char *argv[]){
     QApplication a(argc, argv);
 
