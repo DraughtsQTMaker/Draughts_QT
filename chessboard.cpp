@@ -1,7 +1,6 @@
 #include "Chessboard.h"
 #include <QDebug>
 
-
 extern QHash<QByteArray, QPair<double, int> > blackHashTable;
 
 //构造函数

@@ -11,8 +11,6 @@ ChessLabel::~ChessLabel(){
 
 }
 
-
-
 //Get Set 方法
 void ChessLabel::setChessType(int type){
     this->chessType = type;

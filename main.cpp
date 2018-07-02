@@ -5,9 +5,7 @@
 #include <QTextCodec>
 #include <QGridLayout>
 
-
 #include "chessboard.h"
-
 
 int main(int argc, char *argv[]){
     QApplication a(argc, argv);
