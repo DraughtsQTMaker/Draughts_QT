@@ -7,8 +7,6 @@
 
 #include "chessboard.h"
 
-// dev version
-
 int main(int argc, char *argv[]){
     QApplication a(argc, argv);
 
