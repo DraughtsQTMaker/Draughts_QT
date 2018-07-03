@@ -22,7 +22,7 @@ int main(int argc, char *argv[]){
 
 
     bool isOK;
-    QString chessBoardType = askDialog.getText(NULL,"Verison Selector","Input the version:\t\t\t\t", QLineEdit::Normal,"Version:", &isOK);
+    QString chessBoardType = askDialog.getText(NULL,"new branch Verison Selector","Input the version:\t\t\t\t", QLineEdit::Normal,"Version:", &isOK);
 
 
     if(isOK && chessBoardType.contains("100")){
