@@ -6,6 +6,7 @@
 #include <QRadioButton>
 #include <QLabel>
 #include <QLayout>
+#include <QInputDialog>
 
 #include "chessboard.h"
 
@@ -16,15 +17,22 @@ public:
     MainWindow(QWidget* parent=0);
     ~MainWindow();
 
-    // the dialog to select game version (64 or 100)
+    // the dialog to select game version (64 or 100)、输入先后手名称
     QDialog* askDialog;
+
 
     // show game version selection dialog
     void showDialog();
 
+
+
 private:
     // information text of version selection dialog
     QLabel* labelTex;
+    QLabel* firstName;
+    QLabel* secondName;
+    QLineEdit* firstEdit;
+    QLineEdit* secondEdit;
 
     // version selection radio buttons
     // version 64
@@ -49,6 +57,8 @@ private:
     const int mode64_layNum = 8;
     // layer number of version 100
     const int mode100_layNum = 11;
+
+
 
 public slots:
     virtual void accept();

@@ -10,6 +10,7 @@
 #include "BackEnd/DataStructure.h"
 #include "BackEnd/Checker_AlphaBetaSearch.h"
 #include "BackEnd/Checker_CheckerState.h"
+#include <time.h>
 
 
 class Chessboard : public QLabel
@@ -85,6 +86,22 @@ public:
 
     //机器方下棋
     int robotPlay();
+
+    //记录第几回合
+    int count=1;
+
+    QString writcontent="";
+    void  writeText(QString str);
+
+    // 创建打谱文件  返回文件路径
+    /*输入：先手名称、后手名称
+          返回：创建文件名*/
+     void createText(QString first, QString second);
+
+
+     /*打谱TXT重命名 */
+     void reNameForText(QString first, QString second,QString winner);
+
 
 
 signals:

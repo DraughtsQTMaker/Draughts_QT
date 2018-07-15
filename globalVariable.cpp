@@ -31,3 +31,8 @@ bool consecutiveEating = false;
 
 bool gameOver = false;
 
+QString path="F:/c++/code/test.txt";
+
+QString first="";
+QString second="";
+
